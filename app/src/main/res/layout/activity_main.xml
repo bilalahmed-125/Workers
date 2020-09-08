@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSharedElementsUseOverlay="false">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/duo_view_footer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_content">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="?attr/listPreferredItemPaddingRight"
+            android:background="@drawable/bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/textGrid"
+                        android:text="CATAGORIES"
+                        android:textStyle="bold"
+                        android:textSize="34sp"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <GridLayout
+                    android:columnCount="2"
+                    android:rowCount="3"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:padding="14dp"
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:onClick="electricianopen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/electrician"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:onClick="electricianopen"
+                                android:src="@drawable/electrician" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electrician"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:onClick="electricianopen"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:onClick="masonopen"                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/bricklayer"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:onClick="masonopen"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mason"
+                                android:onClick="masonopen"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:onClick="plumberopen">
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/plumber"
+                                android:id="@+id/plumber"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:onClick="plumberopen"/>
+                            <TextView
+                                android:text="Plumber"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="plumberopen"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:onClick="painteropen">
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/painter"
+                                android:id="@+id/painter"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:onClick="painteropen"/>
+                            <TextView
+                                android:text="Painter"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="painteropen"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:onClick="carpenteropen">
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/carpainter"
+                                android:id="@+id/carpainter"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:onClick="carpenteropen"/>
+                            <TextView
+                                android:text="Carpenter"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="carpenteropen"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:onClick="loginopen">
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/login"
+                                android:id="@+id/login"
+                                android:onClick="loginopen"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp" />
+                            <TextView
+                                android:text="Log In"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:layout_gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="loginopen"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </GridLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

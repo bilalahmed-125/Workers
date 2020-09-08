@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/phonecall"
+        android:id="@+id/phoneImage" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Title"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/myTitle"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textColor="#303b32"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/typeTitle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asda"
+                android:textColor="#303b32"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/nameField"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textColor="#303b32"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/phoneTitle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asdas"
+                android:textColor="#303b32"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/phoneNumber"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="right">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/phonecall"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/ic_outline_phone_24"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

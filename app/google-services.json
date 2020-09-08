@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630122106783",
+    "firebase_url": "https://check-27cf7.firebaseio.com",
+    "project_id": "check-27cf7",
+    "storage_bucket": "check-27cf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630122106783:android:1ca13f52b0e06cb43c77aa",
+        "android_client_info": {
+          "package_name": "com.example.workers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630122106783-1pc4sp76oqvcol876fngc7cf4fjj566r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPIlSUvazLN4i1_ay5WeJ8fJZ53pkKEto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630122106783-1pc4sp76oqvcol876fngc7cf4fjj566r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

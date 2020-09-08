@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/el" android:title="Electrician">
+
+    </item>
+    <item
+        android:id="@+id/pl" android:title="Plumber">
+
+    </item>
+    <item
+        android:id="@+id/ms" android:title="Mason">
+
+    </item>
+    <item
+        android:id="@+id/cp" android:title="Carpenter">
+
+    </item>
+    <item
+        android:id="@+id/pn" android:title="Painter">
+
+    </item>
+
+
+
+
+</menu>
